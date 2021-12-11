@@ -27,8 +27,6 @@ function optionChanged(newSample) {
   // Fetch new data each time a new sample is selected
   buildMetadata(newSample);
   buildCharts(newSample);
-  buildGaugeChart(newSample);
-  buildBubbleChart(newSample);
   
 }
 
@@ -57,7 +55,7 @@ function buildMetadata(sample) {
 }
 
 // 1. Create the buildCharts function.
-function buildCharts(sample) {
+function buildChart(sample) {
   // 2. Use d3.json to load and retrieve the samples.json file 
   d3.json("samples.json").then((data) => {
     // 3. Create a variable that holds the samples array. 
