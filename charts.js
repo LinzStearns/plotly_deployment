@@ -67,9 +67,7 @@ function buildBarChart(sample) {
       }
       ];
 
-      //var data = [barData];
-
-      var bar_layout = {
+      var barLayout = {
         title: "Top 10 OTUs",
    
       };
